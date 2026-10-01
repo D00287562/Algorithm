@@ -1,0 +1,17 @@
+
+public class Utilities {
+    public static void main(String[] args) {
+        System.out.println(getAbs(-5));
+    }
+
+    public static double getAbs(double num) {
+        double total = num * 1;
+        double nototal = num * -1;
+        if (num >= 0) {
+            return total;
+        } else {
+           return nototal;
+
+        }
+    }
+}
