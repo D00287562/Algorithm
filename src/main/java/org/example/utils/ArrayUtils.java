@@ -10,6 +10,12 @@ public static void main(String[] args) {
     displayArray("yes");
     displayArray("cake");
     displayArray("triple");
+
+    int[] num = {32, 45, 64, 13};
+            int result = calcAverage(num);
+            System.out.println("The average is: " + result);
+
+
 }
 
 public static void displayArray(int[] numbers) {
@@ -26,8 +32,20 @@ public static void displayArray(String character) {
     }
 }
 
+    /**
+     * the method returns to you the average of the numbers in the array
+     * @param num the array of integers to be calculated
+     * @return the calculated integer of the entire array
+     */
 
-public static int calcAvarage (int )
+public static int calcAverage (int[] num) {
+    int sum = 0;
+    for(int i = 0; i < num.length; i++) {
+       sum =  sum + num[i];
+    }
+    int avg = sum / num.length;
+    return avg;
+}
 
 
 
