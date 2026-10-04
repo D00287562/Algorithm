@@ -15,6 +15,10 @@ public static void main(String[] args) {
             int result = calcAverage(num);
             System.out.println("The average is: " + result);
 
+            int[] highest = {13, 64, 139, 75, 333};
+            int outcome = findMax(highest);
+            System.out.println("The highest number is:" + outcome);
+
 
 }
 
@@ -48,6 +52,21 @@ public static int calcAverage (int[] num) {
 }
 
 
+    /**
+     * finds the highest integer in the array
+     * @param highest is the array in which it finds the biggest integer
+     * @return the biggest integer
+     */
+    public static int findMax (int[] highest) {
+    int Max = highest[0];
+    for(int i = 0; i < highest.length; i++) {
+        if (Max < highest[i]) {
+            Max = highest[i];
+        }
+
+    }
+    return Max;
+}
 
 }
 
