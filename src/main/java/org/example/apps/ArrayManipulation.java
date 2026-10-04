@@ -10,11 +10,15 @@ import utils.ArrayUtils;
 public class ArrayManipulation {
     public static void main(String [] args) {
         int[] grades = new int[10];
+        int Max = 0;
         for (int i = 0; i < grades.length; i++) {
             grades[i] = getValidInteger("Enter your grade");
+            if (grades[i] > Max) {
+                Max = grades[i];
+            }
         }
         int results = ArrayUtils.calcAverage(grades);
-        System.out.println("you gpa: " + results);
+        System.out.println("you gpa " + "and highest grade: " + Max);
     }
 
 
@@ -34,6 +38,7 @@ public static int getValidInteger(String prompt) {
     return input.nextInt();
 
 }
+
 
 
 
