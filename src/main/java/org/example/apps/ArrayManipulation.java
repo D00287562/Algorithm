@@ -19,6 +19,23 @@ public class ArrayManipulation {
         }
         int results = ArrayUtils.calcAverage(grades);
         System.out.println("you gpa " + "and highest grade: " + Max);
+
+
+        String words[] = new String[10];
+        Scanner keyboard = new Scanner(System.in);
+
+        for (int i = 0; i < words.length; i++) {
+            System.out.println("Enter word" + (i + 1) + ": ");
+            words[i] = keyboard.nextLine();
+        }
+
+        String Maxwords = words[0];
+        for (int i = 0; i < words.length; i++) {
+            if (words[i].compareTo(Maxwords) > 0) {
+                Maxwords = words[i];
+            }
+            System.out.println("The last text that appears in the dictionary is" + Maxwords);
+        }
     }
 
 
