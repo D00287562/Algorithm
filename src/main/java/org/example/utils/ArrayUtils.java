@@ -20,6 +20,11 @@ public static void main(String[] args) {
             System.out.println("The highest number is:" + outcome);
 
 
+    String[] words = {"Birthday", "Jump", "Roof", "Cookies"};
+    String outcomeMax = findMax(words);
+    System.out.println("The last element is " + outcomeMax);
+
+
 }
 
 public static void displayArray(int[] numbers) {
@@ -67,6 +72,23 @@ public static int calcAverage (int[] num) {
     }
     return Max;
 }
+
+
+    /**
+     * finds Alphabetically the last string in the array
+     * @param words the array of the strings
+     * @return the string that is the last
+     */
+    public static String findMax (String[] words) {
+        String Max = words[0];
+        for(int i = 0; i < words.length; i++) {
+            if (words[i].compareTo(Max) > 0) {
+                Max = words[i];
+            }
+        }
+        return Max;
+}
+
 
 }
 
