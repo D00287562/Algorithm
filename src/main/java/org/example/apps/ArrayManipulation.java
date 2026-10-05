@@ -18,7 +18,7 @@ public class ArrayManipulation {
             }
         }
         int results = ArrayUtils.calcAverage(grades);
-        System.out.println("you gpa " + "and highest grade: " + Max);
+        System.out.println("you gpa " + results + " and highest grade: " + Max);
 
 
         String words[] = new String[10];
@@ -36,6 +36,15 @@ public class ArrayManipulation {
             }
             System.out.println("The last text that appears in the dictionary is" + Maxwords);
         }
+        int[] lowestgrade = new int[10];
+        int Min =  12;
+        for (int i = 0; i < lowestgrade.length; i++) {
+            lowestgrade[i] = getValidInteger("Enter your grade");
+            if (lowestgrade[i] < Min) {
+                Min = lowestgrade[i];
+            }
+        }
+        System.out.println("Your lowest grade: " + Min);
     }
 
 
