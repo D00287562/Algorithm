@@ -29,6 +29,10 @@ public class ArrayUtils {
         int resultMin = findMin(lowest);
         System.out.println("The lowest number is: " + resultMin);
 
+        String[] first = {"Choclate", "run", "eat", "programming"};
+        String outcomefirst = findMin(first);
+        System.out.println("The first element is " + outcomefirst);
+
     }
 
     public static void displayArray(int[] numbers) {
@@ -109,6 +113,21 @@ public class ArrayUtils {
             }
         }
         return Min;
+    }
+
+    /**
+     * finds the first element that would appear in an array of text alphabetically
+     * @param first is the array in which it finds the first element
+     * @return the first element in the array
+     */
+    public static String findMin(String[] first) {
+        String Max = first[0];
+        for (int i = 0; i < first.length; i++) {
+            if (first[i].compareTo(Max) < 0) {
+                Max = first[i];
+            }
+        }
+        return Max;
     }
 }
 
