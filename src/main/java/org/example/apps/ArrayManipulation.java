@@ -45,6 +45,25 @@ public class ArrayManipulation {
             }
         }
         System.out.println("Your lowest grade: " + Min);
+
+
+
+        String firstwords[] = new String[10];
+
+        for (int i = 0; i < firstwords.length; i++) {
+            System.out.println("Enter word" + (i + 1) + ": ");
+            firstwords[i] = keyboard.nextLine();
+        }
+
+        String Minwords = firstwords[0];
+        for (int i = 0; i < firstwords.length; i++) {
+            if (firstwords[i].compareTo(Minwords) < 0) {
+                Minwords = firstwords[i];
+            }
+            System.out.println("The first text that appears in the dictionary is " + Minwords);
+        }
+
+
     }
 
 
