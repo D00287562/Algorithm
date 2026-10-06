@@ -62,8 +62,9 @@ public class ArrayManipulation {
             }
             System.out.println("The first text that appears in the dictionary is " + Minwords);
         }
-
-
+       int[] seventy = {34, 70, 81, 33, 21, 19};
+       int resultseventy = seventygrade(seventy);
+       System.out.println("the number 70 appeared: " + resultseventy);
     }
 
 
@@ -84,10 +85,16 @@ public static int getValidInteger(String prompt) {
 
 }
 
-
-
-
+public static int seventygrade (int[] seventy) {
+    int value = 70;
+    int count = 0;
+    for (int i = 0; i < seventy.length; i++) {
+        if (seventy[i] == value) {
+            count++;
+        }
     }
+    return count;
+}}
 
 
 

@@ -136,7 +136,7 @@ public class ArrayUtils {
 public static int count (int[] nums, int value) {
     int counts = 0;
     for (int i = 0; i < nums.length; i++) {
-        if (nums[i] > value) {
+        if (nums[i] == value) {
             counts++;
         }
 
