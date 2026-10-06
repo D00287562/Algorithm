@@ -33,6 +33,10 @@ public class ArrayUtils {
         String outcomefirst = findMin(first);
         System.out.println("The first element is " + outcomefirst);
 
+        int nums[] = {32, 54, 53, 21, 32, 19};
+        int outcometwo = count(nums, 32);
+        System.out.println(" " + outcometwo);
+
     }
 
     public static void displayArray(int[] numbers) {
@@ -129,7 +133,17 @@ public class ArrayUtils {
         }
         return Max;
     }
+public static int count (int[] nums, int value) {
+    int counts = 0;
+    for (int i = 0; i < nums.length; i++) {
+        if (nums[i] > value) {
+            counts++;
+        }
 
+    }
+    return counts;
+
+}
 
 }
 
