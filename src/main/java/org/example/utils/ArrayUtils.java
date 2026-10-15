@@ -41,6 +41,11 @@ public class ArrayUtils {
         int[] resultsgrows = grows(growing);
         System.out.println(" " + java.util.Arrays.toString(resultsgrows));
 
+        String[] orginal = {"Eat", "Cookies"};
+        String[] bigger = resize(orginal, 5);
+        System.out.println("Bigger " + java.util.Arrays.toString(bigger));
+
+
     }
 
     public static void displayArray(int[] numbers) {
@@ -158,15 +163,6 @@ public static int[] grow (int[] num) {
         return Large;
 }
 
-public static String[] resize (String[] text, int newsize) {
-    int textorginal = text.length;
-    String[] Large = new String [newsize];
-    for(int i = 0; i < text.length; i++){
-        Large[i] = text[i];
-    }
-    return Large;
-}
-
 public static int[] grows (int[] nums) {
         int[] bigger = new int [nums.length + 10];
         for (int i = 0; i < nums.length; i++) {
@@ -174,6 +170,16 @@ public static int[] grows (int[] nums) {
         }
         return bigger;
 }
+
+    public static String[] resize (String[] text, int newsize) {
+        int textorginal = text.length;
+        String[] Large = new String [newsize];
+        int limit = Math.min(text.length, newsize);
+        for(int i = 0; i < limit; i++){
+            Large[i] = text[i];
+        }
+        return Large;
+    }
 
 }
 
