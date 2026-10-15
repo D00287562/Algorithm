@@ -1,5 +1,4 @@
 package org.example.entetis;
-
 public class person {
     public String name = "John" ;
         public String secondname = "hop";

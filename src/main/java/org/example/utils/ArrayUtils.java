@@ -37,6 +37,10 @@ public class ArrayUtils {
         int outcometwo = count(nums, 32);
         System.out.println(" " + outcometwo);
 
+        int[] growing = {32, 45, 54};
+        int[] resultsgrows = grows(growing);
+        System.out.println(" " + java.util.Arrays.toString(resultsgrows));
+
     }
 
     public static void displayArray(int[] numbers) {
@@ -143,6 +147,32 @@ public static int count (int[] nums, int value) {
     }
     return counts;
 
+}
+
+public static int[] grow (int[] num) {
+        int orginal = num.length;
+        int[] Large = new int [orginal + 10];
+        for(int i = 0; i < num.length; i++){
+            Large[i] = num[i];
+        }
+        return Large;
+}
+
+public static String[] resize (String[] text, int newsize) {
+    int textorginal = text.length;
+    String[] Large = new String [newsize];
+    for(int i = 0; i < text.length; i++){
+        Large[i] = text[i];
+    }
+    return Large;
+}
+
+public static int[] grows (int[] nums) {
+        int[] bigger = new int [nums.length + 10];
+        for (int i = 0; i < nums.length; i++) {
+            bigger[i] = nums[i];
+        }
+        return bigger;
 }
 
 }
