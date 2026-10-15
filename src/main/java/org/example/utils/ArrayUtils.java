@@ -46,6 +46,15 @@ public class ArrayUtils {
         String[] bigger = resize(orginal, 5);
         System.out.println("Bigger " + java.util.Arrays.toString(bigger));
 
+        int[] variable1 = {32, 43, 67, 19};
+        int[] variable2 = {31, 42, 18, 10};
+
+        int[] combined = merge(variable1, variable2);
+
+        System.out.println(java.util.Arrays.toString(combined));
+
+
+
         java.util.Scanner input = new java.util.Scanner(System.in);
         System.out.println("How big do you want your array to be?");
         int size = input.nextInt();
@@ -67,7 +76,7 @@ public class ArrayUtils {
             }
         }
 
-System.out.println("Array " + java.util.Arrays.toString(num));
+        System.out.println("Array " + java.util.Arrays.toString(num));
 
     }
 
@@ -204,9 +213,27 @@ public static int[] grows (int[] nums) {
         return Large;
     }
 
+    public static int[] merge(int[] num1, int[] num2) {
+        int[] merged = new int[num1.length + num2.length];
+        int count = 0;
+        for (int i = 0; i < num1.length; i++) {
+            merged[count] = num1[i];
+            count++;
+        }
+        for (int i = 0; i < num2.length; i++) {
+            merged[count] = num1[i];
+            count++;
+        }
+        return merged;
+    }
 
 
-}
+
+
+    }
+
+
+
 
 
 
