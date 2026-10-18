@@ -1,4 +1,4 @@
-package apps.Number;
+
 import java.util.Scanner;
 
 public class merging {
@@ -40,4 +40,7 @@ public class merging {
         return merged;
 
     }
+
+void main() {
+}
 

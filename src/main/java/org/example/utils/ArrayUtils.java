@@ -58,16 +58,16 @@ public class ArrayUtils {
         java.util.Scanner input = new java.util.Scanner(System.in);
         System.out.println("How big do you want your array to be?");
         int size = input.nextInt();
-        int[] num = new int[size];
-        for (int i = 0; i < num.length; i++) {
+        int[] numb = new int[size];
+        for (int i = 0; i < numb.length; i++) {
             System.out.println("Add numbers");
-            num[i] = input.nextInt();
+            numb[i] = input.nextInt();
         }
         System.out.println("Do you wanna continue? yes/no");
         String choice = input.next();
         if (choice.equalsIgnoreCase("yes")) {
-            int oldlength = num.length;
-            num = grows(num);
+            int oldlength = numb.length;
+            numb = grows(numb);
             System.out.println("Array is bigger by 10 slots");
 
             for (int i = oldlength; i < num.length; i++) {
@@ -76,7 +76,7 @@ public class ArrayUtils {
             }
         }
 
-        System.out.println("Array " + java.util.Arrays.toString(num));
+        System.out.println("Array " + java.util.Arrays.toString(numb));
 
     }
 
@@ -221,7 +221,7 @@ public static int[] grows (int[] nums) {
             count++;
         }
         for (int i = 0; i < num2.length; i++) {
-            merged[count] = num1[i];
+            merged[count] = num2[i];
             count++;
         }
         return merged;
