@@ -17,7 +17,7 @@ public class NumberDuplicateRemoval {
         int[] newArray = NumberUtilities.deduplicate(numb);
         System.out.println("duplicate Array: " + Arrays.toString(newArray));
         int remove = numb.length - newArray.length;
-        System.out.println("Duplicates removed: " + remove);
+        System.out.println("Duplicates removedd: " + remove);
 
     }
 }
