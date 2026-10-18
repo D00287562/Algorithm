@@ -1,3 +1,5 @@
+package org.example.apps.s;
+
 import java.util.Arrays;
 import java.util.Scanner;
 import org.example.utils.NumberUtilities;
