@@ -1,4 +1,4 @@
-package org.example.apps;
+package org.example.apps.s;
 
 import java.util.Scanner;
 import utils.ArrayUtils;
