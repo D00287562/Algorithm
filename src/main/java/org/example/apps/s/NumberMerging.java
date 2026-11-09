@@ -1,7 +1,8 @@
 package apps.Number;
-import java.util.Scanner;
 
-import static utils.ArrayUtils.merge;
+import java.util.Scanner;
+import java.util.Arrays;
+import utils.ArrayUtils;
 
 public class NumberMerging {
     public static void main(String[] args) {
@@ -14,20 +15,18 @@ public class NumberMerging {
             System.out.println("Enter number : " + (i + 1));
             holder1[i] = input.nextInt();
         }
-
-
         System.out.println("Please enter five numbers for second array");
         for (int i = 0; i < holder2.length; i++) {
             System.out.println("Enter number : " + (i + 1));
             holder2[i] = input.nextInt();
         }
-        int[] finalresult = merge(holder1, holder2);
+        Arrays.sort(holder1);
+        Arrays.sort(holder2);
+        int[] finalresult = ArrayUtils.orderedMerge(holder1, holder2);
         for (int i = 0; i < finalresult.length; i++) {
-
             System.out.println("Position: " + i + " contains numbers: " + finalresult[i]);
         }
     }
-
-
 }
+
 
