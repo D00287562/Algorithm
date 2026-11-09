@@ -3,14 +3,6 @@ import java.util.Scanner;
 
 public class StringUtilities {
 
-    public static void main(String [] args) {
-        System.out.println("Enter a word");
-        Scanner keyboard = new Scanner(System.in);
-        String sentence = keyboard.nextLine();
-        String[] newwords = sentence.split(" ");
-        String[] finalwords = StringUtilities.deduplicate(newwords);
-        System.out.println("Deduplicated strings:" + java.util.Arrays.toString(finalwords));
-    }
 
     public static String[] deduplicate (String[] split) {
         String[] empty = new String [0];

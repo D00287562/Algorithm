@@ -12,9 +12,9 @@ public class ArrayUtils {
     }
 
 
-    public static void displayArray(String character) {
-        for (int i = 0; i < character.length(); i++) {
-            System.out.println("position " + i + "holds " + character.charAt(i));
+    public static void displayArray(String[] character) {
+        for (int i = 0; i < character.length; i++) {
+            System.out.println("position " + i + "holds " + character[i]);
         }
     }
 
