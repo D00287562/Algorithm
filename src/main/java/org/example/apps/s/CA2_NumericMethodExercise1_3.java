@@ -3,7 +3,7 @@ package org.example.apps.s;
 import static utils.ArrayUtils.grows;
 
 
-public class NumericMethodResizingExercise1_3 {
+public class CA2_NumericMethodExercise1_3 {
 
     public static void main(String[] args) {
 
