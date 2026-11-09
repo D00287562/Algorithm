@@ -3,82 +3,6 @@ package utils;
 public class ArrayUtils {
 
 
-    public static void main(String[] args) {
-        int[] numbers = {10, 32, 15, 27};
-        displayArray(numbers);
-
-        displayArray("Hi");
-        displayArray("yes");
-        displayArray("cake");
-        displayArray("triple");
-
-        int[] num = {32, 45, 64, 13};
-        int result = calcAverage(num);
-        System.out.println("The average is: " + result);
-
-        int[] highest = {13, 64, 139, 75, 333};
-        int outcome = findMax(highest);
-        System.out.println("The highest number is:" + outcome);
-
-
-        String[] words = {"Birthday", "Jump", "Roof", "Cookies"};
-        String outcomeMax = findMax(words);
-        System.out.println("The last element is " + outcomeMax);
-
-
-        int lowest[] = {54, 53, 3, 99, 11, 45};
-        int resultMin = findMin(lowest);
-        System.out.println("The lowest number is: " + resultMin);
-
-        String[] first = {"Choclate", "run", "eat", "programming"};
-        String outcomefirst = findMin(first);
-        System.out.println("The first element is " + outcomefirst);
-
-        int nums[] = {32, 54, 53, 21, 32, 19};
-        int outcometwo = count(nums, 32);
-        System.out.println(" " + outcometwo);
-
-        int[] growing = {32, 45, 54};
-        int[] resultsgrows = grows(growing);
-        System.out.println(" " + java.util.Arrays.toString(resultsgrows));
-
-        String[] orginal = {"Eat", "Cookies"};
-        String[] bigger = resize(orginal, 5);
-        System.out.println("Bigger " + java.util.Arrays.toString(bigger));
-
-        int[] variable1 = {32, 43, 67, 19};
-        int[] variable2 = {31, 42, 18, 10};
-
-        int[] combined = merge(variable1, variable2);
-
-        System.out.println(java.util.Arrays.toString(combined));
-
-
-
-        java.util.Scanner input = new java.util.Scanner(System.in);
-        System.out.println("How big do you want your array to be?");
-        int size = input.nextInt();
-        int[] numb = new int[size];
-        for (int i = 0; i < numb.length; i++) {
-            System.out.println("Add numbers");
-            numb[i] = input.nextInt();
-        }
-        System.out.println("Do you wanna continue? yes/no");
-        String choice = input.next();
-        if (choice.equalsIgnoreCase("yes")) {
-            int oldlength = numb.length;
-            numb = grows(numb);
-            System.out.println("Array is bigger by 10 slots");
-
-            for (int i = oldlength; i < num.length; i++) {
-                System.out.println("Add numbers ");
-                num[i] = input.nextInt();
-            }
-        }
-
-        System.out.println("Array " + java.util.Arrays.toString(numb));
-
-    }
 
     public static void displayArray(int[] numbers) {
         int count = 0;
@@ -231,6 +155,7 @@ public static int[] grows (int[] nums) {
 
 
     }
+
 
 
 
